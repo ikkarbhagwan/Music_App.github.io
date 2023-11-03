@@ -1,0 +1,247 @@
+/* importing two Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+/* Body styles */
+body {
+  background-color: #1ed760;
+}
+
+/* Resetting margin and padding for all elements */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the navigation bar */
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex;
+
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+
+/* Style for the navigation bar */
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+
+/* Style for the brand/logo */
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+/* Style for the Log In and Sign Up buttons */
+/* Style for the form elements */
+form {
+  font-family: system-ui;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px 2px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color:black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+h1
+{
+font-family: system-ui;
+}
+p{
+
+  padding-top: 20px;
+  font-family: system-ui;
+}
+
+.modal {
+  
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+/* Style for the "Log In" button */
+#openLoginModal {
+  margin-left:85%;
+  background-color: white; 
+  color: black; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-weight: bold;
+ }
+
+#openLoginModal:hover {
+  background-color: #0c9936; /* Change background color on hover */
+}
+
+
+/* Styles for the brand logo */
+
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+/* Styles for the main container */
+
+.container {
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Styles for the bottom section (music player controls) */
+
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 130px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styles for icons in the bottom section */
+
+.icons {
+  margin-top: 14px;
+}
+.icons i {
+  cursor: pointer;
+}
+
+/* Styles for the progress bar */
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+/* Styles for the song list items */
+
+.songItemContainer {
+  margin-top: 74px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+/* Styles for song information */
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
